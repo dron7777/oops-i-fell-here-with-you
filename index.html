@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Valentine Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p>♡ Letter for You ♡</p>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+      <div class="letter-window">
+        <h1 id="letter-title">Will you be my Valentine?</h1>
+
+        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+
+        <div class="buttons" id="letter-buttons">
+          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+          <div class="no-wrapper">
+            <img src="no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+          <strong> Veduu ❤️ </strong>Every day with you feels like my favourite love story  and I’m so grateful I get to live it with you. <strong>Happy Valentine’s Day </strong>to the one who makes my heart feel at home.You’re my favourite habit, my biggest smile, and the reason my heart forgets how to behave. This Valentine’s I just want you.. <strong>I Love You❤️</strong>
+        </p>
+      </div>
+    </div>
+
+    <!-- 🎵 Music BEFORE YES -->
+    <audio id="music-before" loop>
+      <source src="Taylor Swift - The Fate of Ophelia (Official Music Video).mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- 🎵 Music AFTER YES -->
+    <audio id="music-after" loop>
+      <source src="I Am In Love Once Upon A Time In Mumbaai 320 Kbps.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- 🎉 Confetti library (must be before script.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!-- Your JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
